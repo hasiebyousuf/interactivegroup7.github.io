@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+  </head>
+  <body>
+    <header>
+      <div class="container" style="justify-content: start; padding: 0;">
+        <div style="width: 5%"></div>
+        <img src="logo.png" style="width:5%;height:5%;" alt="Logo">
+        <div style="width: 2%"></div>
+        <h2>Interactive multimedia</h2>
+        <div style="width: 30%;"></div>
+      </div>
+    </header>
+    <nav>
+      <button class="button" id="aboutButton">About Us</button>
+      <button class="button" id="contactButton">Contact</button>
+    </nav>
+    
+    <div  style="text-align: -webkit-center;">
+      <div style="margin: 10% 10% 0% 10%;text-align: center;" >
+        <p >
+          <br>
+          <h1>
+          Welcome to our website
+          </h1>
+          <h2>
+          Meet the team !!
+          </h2>
+        </p>
+      </div>
+      <img src="arrow.webp" style="max-width: 15%" >
+      <section id="aboutSection">
+        <div style="padding: 10% 0;width: 60%; ">
+          <!-- students 1 2 3 -->
+          <div class="container" style="padding: 0;">
+            <a href="hasieb.html"  class="circle">
+              <img src="images/hasieb.jpeg" alt="Student 1">
+              <span class="tooltip">Hasieb Yousuf Assoboh</span>
+            </a>
+            <a href="sadiq.html" class="circle">
+              <img src="images/sadiq.jpeg" alt="Student 2">
+              <span class="tooltip">Sadiq Lawal Abubakar</span>
+            </a>
+            <a href="mohammed.html" class="circle">
+              <img src="images/mohammed.jpeg" alt="Student 3">
+              <span class="tooltip">Mohammed Almehrzi</span>
+            </a>
+            
+          </div>
+          <!--  -->
+          <!-- students 4 - 5 -->
+          <div class="container" style="padding: 0% 15%;">
+            <a href="khalid.html" class="circle">
+              <img src="images/khalid.jpeg" alt="Student 4">
+              <span class="tooltip">Khalid Almarri</span>
+            </a>
+            <a href="yousef.html" class="circle">
+              <img src="images/yousef.jpeg" alt="Student 5">
+              <span class="tooltip">Yousef</span>
+            </a>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+    </div>
+    
+    <!-- <div style="height: 100px;"></div> -->
+    
+    <footer>
+      <div style="padding: 12% 0%">
+        <div class="container">
+          <div class="contact-info">
+            <h3>Hasieb Yousuf Assoboh</h3>
+            <p>Instagram:
+              <a style="color: white;" href="https://instagram.com/hasiebyousuf?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">
+                hasiebyousuf
+              </a>
+            </p>
+          </div>
+          <div class="contact-info">
+            <h3>Sadiq Lawal Abubakar</h3>
+            <p>Instagram:
+              <a style="color: white;" href="https://instagram.com/_sadiql?utm_source=qr">
+                _sadiql
+              </a>
+            </p>
+          </div>
+          <div class="contact-info">
+            <h3>Mohammed Almehrzi</h3>
+            <p>Whatsapp:
+              +971 50 942 9650
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="contact-info">
+            <h3>Khalid Almarri</h3>
+            <p>Whatsapp:
+              +971 543 382 223
+            </p>
+          </div>
+          <div class="contact-info">
+            <h3>Yousef</h3>
+            <p>Instagram:
+              <a style="color: white;" href="https://instagram.com/_khalidy?igshid=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr
+                ">
+                _khalidy
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+    // JavaScript to handle button clicks and scrolling
+    // Function to scroll to a specific section
+    function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+    }
+    }
+    // About Us button click event
+    document.getElementById('aboutButton').addEventListener('click', function() {
+    scrollToSection('aboutSection');
+    });
+    // Contact button click event
+    document.getElementById('contactButton').addEventListener('click', function() {
+    // If you want to scroll to the end of the page
+    window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+    });
+    // If you want to scroll to a specific section at the end of the page
+    // scrollToSection('contactSection');
+    });
+    </script>
+  </body>
+</html>
